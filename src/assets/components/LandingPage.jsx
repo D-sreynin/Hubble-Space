@@ -1,8 +1,15 @@
 import React from "react";
+import Science from "./Science";
+import FeatureNews from "./FeaturedNews";
+import VideoHighlight from "./VideoHighlight";
+import EarthInfoCenter from "./EarthInfoCenter";
+import ImageOfTheDay from "./ImageOfTheDay";
+import ImageNasa from "./ImageNasa";
 
 function LandingPage() {
   return (
-    <section
+    <div>
+      <section
       className="relative w-full h-screen bg-black flex items-center justify-start px-8"
       style={{
         backgroundImage: `url(/image/image.png)`, // Correct file path to the image
@@ -25,6 +32,13 @@ function LandingPage() {
         </button>
       </div>
     </section>
+    <FeatureNews/>
+    <Science/>
+    <VideoHighlight/>
+    <EarthInfoCenter/>
+    <ImageOfTheDay/>
+    <ImageNasa/>
+    </div>
   );
 }
 
